@@ -1,7 +1,7 @@
 const chalk = require('chalk');
-const ValidationError = require('../error/errors').ValidationError;
-const AuthenticationError = require('../error/errors').AuthenticationError;
-const AccessDeniedError = require('../error/errors').AccessDeniedError;
+const ValidationError = require('../errors/errors').ValidationError;
+const AuthenticationError = require('../errors/errors').AuthenticationError;
+const AccessDeniedError = require('../errors/errors').AccessDeniedError;
 
 function errorLogger(err, req, res, next) {
     if (err.message) {
